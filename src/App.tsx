@@ -56,7 +56,7 @@ const initialState: IInitialState = {
   form: { name: "", description: "" }
 };
 
-function reducer(state: IInitialState, action: any) {
+function reducer(state: IInitialState, action: any): IInitialState {
   switch (action.type) {
     case "SET_NOTES":
       return { ...state, notes: action.notes, loading: false };
